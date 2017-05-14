@@ -56,21 +56,3 @@ html, body {
 }
 
 
-.tl {
-  align-items: flex-start;
-}
-
-.tr {
-  align-items: flex-start;
-
-}
-
-.bl {
-  align-self: flex-end;
-}
-
-.br {
-  align-self: flex-end;
-}
-
-

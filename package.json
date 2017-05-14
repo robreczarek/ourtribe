@@ -4,7 +4,8 @@
   "description": "Ourtri.be - language learning tool",
   "main": "./src/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager . ourtribe --platform=darwin --arch=x64 --out ./build"
   },
   "repository": "https://github.com/robreczarek/ourtribe",
   "keywords": [
@@ -14,7 +15,9 @@
   "author": "Robert Obreczarek",
   "license": "GPL-3.0",
   "devDependencies": {
+    "chai": "^3.5.0",
     "electron": "^1.4.1",
-    "electron-packager": "^8.7.0"
+    "electron-packager": "^8.7.0",
+    "mocha": "^3.4.1"
   }
 }
