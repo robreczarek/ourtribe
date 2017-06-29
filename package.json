@@ -4,8 +4,9 @@
   "description": "Ourtri.be - language learning tool",
   "main": "./src/main.js",
   "scripts": {
-    "start": "electron .",
-    "build": "electron-packager . ourtribe --platform=darwin --arch=x64 --out ./build"
+    "build": "electron-packager . ourtribe --platform=darwin --arch=x64 --out ./build",
+    "lint": "./node_modules/.bin/eslint **/*.js --ignore-pattern node_modules/; exit 0",
+    "start": "electron ."
   },
   "repository": "https://github.com/robreczarek/ourtribe",
   "keywords": [
@@ -15,9 +16,16 @@
   "author": "Robert Obreczarek",
   "license": "GPL-3.0",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
     "chai": "^3.5.0",
     "electron": "^1.4.1",
     "electron-packager": "^8.7.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.6.1",
+    "eslint-plugin-jsx-a11y": "^5.1.0",
+    "eslint-plugin-react": "^7.1.0",
     "mocha": "^3.4.1",
     "spectron": "^3.6.4"
   }
