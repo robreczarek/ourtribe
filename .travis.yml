@@ -37,7 +37,6 @@ install:
 language: node_js
 node_js:
   - 8
-  - 7
 
 os:
   - linux
@@ -45,8 +44,6 @@ os:
 script:
   - node --version
   - yarn lint
-  - yarn package
-  - yarn test
-  - yarn test-e2e
+  - yarn build
 
 sudo: false
