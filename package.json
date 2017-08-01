@@ -4,9 +4,9 @@
   "description": "Ourtri.be - language learning tool",
   "main": "./src/main.js",
   "scripts": {
-    "build": "electron-packager . ourtribe --platform=darwin --arch=x64 --out ./build",
-    "lint": "eslint **/*.js --ignore-pattern node_modules/; exit 0",
-    "start": "electron ."
+    "build": "./node_modules/.bin/electron-packager . ourtribe --platform=darwin --arch=x64 --out ./build",
+    "lint": "./node_modules/.bin/eslint **/*.js --ignore-pattern node_modules/; exit 0",
+    "start": "./node_modules/.bin/electron ."
   },
   "repository": "https://github.com/robreczarek/ourtribe",
   "keywords": [
