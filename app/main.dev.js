@@ -10,6 +10,8 @@
  *
  * @flow
  */
+var path = require('path');
+
 import { app, BrowserWindow } from 'electron';
 import MenuBuilder from './menu';
 
@@ -61,7 +63,9 @@ app.on('ready', async () => {
 
   mainWindow = new BrowserWindow({
     height: 728,
-    show: false,
+    icon: path.join(__dirname, './resources/icon.ico'),
+    show: true,
+    title: 'Ourtribe',
     titleBarStyle: 'hidden',
     width: 1024
   });
